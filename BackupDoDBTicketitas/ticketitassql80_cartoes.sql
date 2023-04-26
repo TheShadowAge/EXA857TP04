@@ -24,8 +24,8 @@ DROP TABLE IF EXISTS `cartoes`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cartoes` (
   `numCartao` int NOT NULL,
-  `titular` varchar(64) NOT NULL,
-  `validade` datetime NOT NULL,
+  `titular` tinytext NOT NULL,
+  `validade` date NOT NULL,
   `cvv` int NOT NULL,
   PRIMARY KEY (`numCartao`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela contendo informacoes pertencentes aos cartoes de creditos de clientes cadastrados no sistema Ticketitas.';
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:22
+-- Dump completed on 2023-04-26  4:47:11

@@ -24,8 +24,8 @@ DROP TABLE IF EXISTS `promoters`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `promoters` (
   `cpfCnpj` int NOT NULL,
-  `nomePromoter` varchar(64) NOT NULL,
-  `emailPromoter` varchar(64) NOT NULL,
+  `nomePromoter` varchar(255) NOT NULL,
+  `emailPromoter` tinytext NOT NULL,
   `senhaPromoter` varchar(64) NOT NULL,
   `statusPromoter` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`cpfCnpj`),
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:26
+-- Dump completed on 2023-04-26  4:47:07

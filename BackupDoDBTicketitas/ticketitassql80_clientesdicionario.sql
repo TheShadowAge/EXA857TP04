@@ -36,7 +36,7 @@ CREATE TABLE `clientesdicionario` (
 
 LOCK TABLES `clientesdicionario` WRITE;
 /*!40000 ALTER TABLE `clientesdicionario` DISABLE KEYS */;
-INSERT INTO `clientesdicionario` VALUES ('cpfCliente','INT','Número de CPF do cliente, apenas números (Chave Primária)'),('emailCliente','VARCHAR(64)','Email completo do cliente'),('nomeCliente','VARCHAR(64)','Nome completo do cliente'),('senhaCliente','VARCHAR(64)','Hash de autenticação da senha do cliente');
+INSERT INTO `clientesdicionario` VALUES ('cpfCliente','INT','Número de CPF do cliente, apenas números (Chave Primária)'),('emailCliente','TINYTEXT','Email completo do cliente'),('nomeCliente','VARCHAR(255)','Nome completo do cliente'),('senhaCliente','VARCHAR(64)','Hash de autenticação da senha do cliente');
 /*!40000 ALTER TABLE `clientesdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:23
+-- Dump completed on 2023-04-26  4:47:08

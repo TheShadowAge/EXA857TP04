@@ -36,7 +36,7 @@ CREATE TABLE `enderecosdicionario` (
 
 LOCK TABLES `enderecosdicionario` WRITE;
 /*!40000 ALTER TABLE `enderecosdicionario` DISABLE KEYS */;
-INSERT INTO `enderecosdicionario` VALUES ('cidade','VARCHAR(45)','Cidade do local do endereco'),('estado','VARCHAR(45)','Estado do local do endereco'),('idLocal','INT','Identificador do endereco (Chave Primária)'),('numeroDoLogradouro','INT','Número do local do endereco'),('rua','VARCHAR(45)','Rua do endereco');
+INSERT INTO `enderecosdicionario` VALUES ('cidade','VARCHAR(255)','Cidade do local do endereco'),('estado','VARCHAR(64)','Estado do local do endereco'),('idLocal','INT','Identificador do endereco (Chave Primária)'),('numeroDoLogradouro','INT','Número do local do endereco'),('rua','VARCHAR(255)','Rua do endereco');
 /*!40000 ALTER TABLE `enderecosdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:26
+-- Dump completed on 2023-04-26  4:47:11

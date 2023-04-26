@@ -36,7 +36,7 @@ CREATE TABLE `promotersdicionario` (
 
 LOCK TABLES `promotersdicionario` WRITE;
 /*!40000 ALTER TABLE `promotersdicionario` DISABLE KEYS */;
-INSERT INTO `promotersdicionario` VALUES ('cpfCnpj','INT','Número de CPF ou CNPJ do promoter, apenas números (Chave Primária)'),('emailPromoter','VARCHAR(64)','Email completo do promoter'),('nomePromoter','VARCHAR(64)','Nome completo do promoter'),('senhaPromoter','VARCHAR(64)','Hash de autenticação da senha do promoter'),('statusPromoter','INT','Status de permissao do promoter (0-1)');
+INSERT INTO `promotersdicionario` VALUES ('cpfCnpj','INT','Número de CPF ou CNPJ do promoter, apenas números (Chave Primária)'),('emailPromoter','TINYTEXT','Email completo do promoter'),('nomePromoter','VARCHAR(255)','Nome completo do promoter'),('senhaPromoter','VARCHAR(64)','Hash de autenticação da senha do promoter'),('statusPromoter','INT','Status de permissao do promoter (0-1)');
 /*!40000 ALTER TABLE `promotersdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:21
+-- Dump completed on 2023-04-26  4:47:08

@@ -24,8 +24,8 @@ DROP TABLE IF EXISTS `eventos`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eventos` (
   `idEvento` int NOT NULL,
-  `nomeEvento` varchar(64) NOT NULL,
-  `descricaoEvento` longtext,
+  `nomeEvento` varchar(255) NOT NULL,
+  `descricaoEvento` mediumtext,
   `statusEvento` int NOT NULL,
   `quantidadePista` int NOT NULL DEFAULT '0',
   `quantidadeStage` int NOT NULL DEFAULT '0',
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:23
+-- Dump completed on 2023-04-26  4:47:11

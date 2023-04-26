@@ -36,7 +36,7 @@ CREATE TABLE `cartoesdicionario` (
 
 LOCK TABLES `cartoesdicionario` WRITE;
 /*!40000 ALTER TABLE `cartoesdicionario` DISABLE KEYS */;
-INSERT INTO `cartoesdicionario` VALUES ('cvv','INT','Código de validação do cartão'),('numCartao','INT','Número do cartão de crédito (Chave Primária)'),('titular','VARCHAR(64)','Nome do titular como consta no cartão'),('validade','DATETIME','Data de validade do cartão');
+INSERT INTO `cartoesdicionario` VALUES ('cvv','INT','Código de validação do cartão'),('numCartao','INT','Número do cartão de crédito (Chave Primária)'),('titular','TINYTEXT','Nome do titular como consta no cartão'),('validade','DATE','Data de validade do cartão');
 /*!40000 ALTER TABLE `cartoesdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:24
+-- Dump completed on 2023-04-26  4:47:08

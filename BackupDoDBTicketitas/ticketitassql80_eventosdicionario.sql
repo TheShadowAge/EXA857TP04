@@ -36,7 +36,7 @@ CREATE TABLE `eventosdicionario` (
 
 LOCK TABLES `eventosdicionario` WRITE;
 /*!40000 ALTER TABLE `eventosdicionario` DISABLE KEYS */;
-INSERT INTO `eventosdicionario` VALUES ('descricaoEvento','LONGTEXT','Descrição detalhada do evento'),('idEvento','INT','Identificador do evento (Chave Primária)'),('nomeEvento','VARCHAR(64)','Nome do evento'),('quantidadePista','INT','Quantidade ingressos disponíveis para o setor \"pista\" do evento'),('quantidadeStage','INT','Quantidade ingressos disponíveis para o setor \"stage\" do evento'),('quantidadeVip','INT','Quantidade ingressos disponíveis para o setor \"VIP\" do evento'),('statusEvento','INT','Status de permissão do evento (0-1)'),('valorPista','FLOAT','Valor do ingresso do setor \"Pista\" do evento'),('valorStage','FLOAT','Valor do ingresso do setor \"Stage\" do evento'),('valorVip','FLOAT','Valor do ingresso do setor \"Vip\" do evento');
+INSERT INTO `eventosdicionario` VALUES ('descricaoEvento','MEDIUMTEXT','Descrição detalhada do evento'),('idEvento','INT','Identificador do evento (Chave Primária)'),('nomeEvento','VARCHAR(255)','Nome do evento'),('quantidadePista','INT','Quantidade ingressos disponíveis para o setor \"pista\" do evento'),('quantidadeStage','INT','Quantidade ingressos disponíveis para o setor \"stage\" do evento'),('quantidadeVip','INT','Quantidade ingressos disponíveis para o setor \"VIP\" do evento'),('statusEvento','INT','Status de permissão do evento (0-1)'),('valorPista','FLOAT','Valor do ingresso do setor \"Pista\" do evento'),('valorStage','FLOAT','Valor do ingresso do setor \"Stage\" do evento'),('valorVip','FLOAT','Valor do ingresso do setor \"Vip\" do evento');
 /*!40000 ALTER TABLE `eventosdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:25
+-- Dump completed on 2023-04-26  4:47:09

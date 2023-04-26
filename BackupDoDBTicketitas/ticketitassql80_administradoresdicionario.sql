@@ -36,7 +36,7 @@ CREATE TABLE `administradoresdicionario` (
 
 LOCK TABLES `administradoresdicionario` WRITE;
 /*!40000 ALTER TABLE `administradoresdicionario` DISABLE KEYS */;
-INSERT INTO `administradoresdicionario` VALUES ('cpfAdministrador','INT','Número de CPF do administrador, apenas números (Chave Primária)'),('emailAdministrador','VARCHAR(64)','Email completo do administrador'),('nomeAdministrador','VARCHAR(64)','Nome completo do administrador'),('senhaAdministrador','VARCHAR(64)','Hash de autenticação da senha do administrador');
+INSERT INTO `administradoresdicionario` VALUES ('cpfAdministrador','INT','Número de CPF do administrador, apenas números (Chave Primária)'),('emailAdministrador','TINYTEXT','Email completo do administrador'),('nomeAdministrador','VARCHAR(255)','Nome completo do administrador'),('senhaAdministrador','VARCHAR(64)','Hash de autenticação da senha do administrador');
 /*!40000 ALTER TABLE `administradoresdicionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-25 23:02:21
+-- Dump completed on 2023-04-26  4:47:05

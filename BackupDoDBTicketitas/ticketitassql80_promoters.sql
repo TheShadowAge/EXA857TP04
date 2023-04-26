@@ -26,11 +26,11 @@ CREATE TABLE `promoters` (
   `cpfCnpj` int NOT NULL,
   `nomePromoter` varchar(64) NOT NULL,
   `emailPromoter` varchar(64) NOT NULL,
-  `senhaPromoter` varchar(32) NOT NULL,
+  `senhaPromoter` varchar(64) NOT NULL,
   `statusPromoter` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`cpfCnpj`),
   CONSTRAINT `CHK_statusPromoter` CHECK (((`statusPromoter` >= 0) and (`statusPromoter` <= 1)))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela contendo informacoes pertencentes aos promoters do sistema Ticketitas.';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-22  1:44:46
+-- Dump completed on 2023-04-25 23:02:26

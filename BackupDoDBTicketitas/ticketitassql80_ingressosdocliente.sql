@@ -29,7 +29,7 @@ CREATE TABLE `ingressosdocliente` (
   KEY `cpfClienteIngressosCliente_idx` (`cpfClienteIngressosCliente`),
   CONSTRAINT `cpfClienteIngressosCliente` FOREIGN KEY (`cpfClienteIngressosCliente`) REFERENCES `clientes` (`cpfCliente`),
   CONSTRAINT `idIngressoIngressosCliente` FOREIGN KEY (`idIngressoIngressosCliente`) REFERENCES `ingressos` (`idIngresso`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela de relacionamento entre um ingresso gerado pelo sistema Ticketitas e o cliente que tem sua posse.';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-22  1:44:50
+-- Dump completed on 2023-04-25 23:02:26

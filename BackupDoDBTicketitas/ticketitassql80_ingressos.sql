@@ -31,7 +31,7 @@ CREATE TABLE `ingressos` (
   CONSTRAINT `CHK_perfilDePreco` CHECK (((`perfilDePreco` >= 0) and (`perfilDePreco` <= 2))),
   CONSTRAINT `CHK_setor` CHECK (((`setor` >= 0) and (`setor` <= 2))),
   CONSTRAINT `ingressos_chk_1` CHECK ((`setor` >= 0))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela contendo informacoes pertencentes aos ingressos gerados pelo sistema Ticketitas.';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-22  1:44:46
+-- Dump completed on 2023-04-25 23:02:20
